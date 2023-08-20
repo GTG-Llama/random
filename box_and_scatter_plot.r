@@ -1,3 +1,6 @@
+# Read csv file
+college <- read.csv("/Users/darkospy/Desktop/R Studio/college.csv", header=TRUE)
+
 # If the college is private, change the second column value to private, otherwise, change it to public
 college$Private[college$Private == "Yes"] <- c("Private")
 college$Private[college$Private == "No"] <- c("Public")
